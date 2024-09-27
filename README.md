@@ -12,17 +12,17 @@ We will cover with automation scripts the login functionality of the Swag Labs a
 
 ## Project Structure
 - The project is structured as follows:
-   - src/test/java/features/: Contains Gherkin features.
-   - src/test/java/pom/: Page Object Model classes.
-   - src/test/java/runner/: Contains test runner and driver manager classes.
-   - src/test/java/runner/driverManager/: Contains the driver management
-   - src/test/java/seleniumgluecode/: Contains steps definitions (glue code) and hooks.
+   - `src/test/java/features/`: Contains Gherkin features.
+   - `src/test/java/pom/`: Page Object Model classes.
+   - `src/test/java/runner/`: Contains test runner and driver manager classes.
+   - `src/test/java/runner/driverManager/`: Contains the driver management
+   - `src/test/java/seleniumgluecode/`: Contains steps definitions (glue code) and hooks.
 
 - Some of the key classes are:
-   - TestRunner.java: Orchestrates the execution of Cucumber scenarios, allowing to define which feature files to run and configure test suite options.
-   - Background.java: Contains shared step definitions and setup code that are common to multiple Cucumber scenarios.
-   - Hooks.java: Contains setup and teardown code (e.g., Before and After hooks).
-   - TestBase.java: Provides a base class for Page Factory init.
+   - `TestRunner.java`: Orchestrates the execution of Cucumber scenarios, allowing to define which feature files to run and configure test suite options.
+   - `Background.java`: Contains shared step definitions and setup code that are common to multiple Cucumber scenarios.
+   - `Hooks.java`: Contains setup and teardown code (e.g., Before and After hooks).
+   - `TestBase.java`: Provides a base class for Page Factory init.
 
 
 ## Running the tests
