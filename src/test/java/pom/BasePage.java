@@ -25,7 +25,7 @@ public class BasePage {
   /*
    *  --- ACTIONS ---
    */
-  public static void actionSendKeys(WebElement element, String nombreElemento, String value) {
+  public static void sendKeys(WebElement element, String value) {
     try {
       element.sendKeys(value);
     } catch (Exception e) {
@@ -33,7 +33,7 @@ public class BasePage {
     }
   }
 
-  public static void actionClick(WebElement element) {
+  public static void click(WebElement element) {
     try {
       element.click();
     } catch (Exception e) {
@@ -46,6 +46,7 @@ public class BasePage {
    */
   public boolean isDisplayed(WebElement element) {
     try {
+      waitForElementToAppear(element);
       return element.isDisplayed();
     } catch (Exception e) {
       logger.log(Level.SEVERE, "Exception occurred while checking if element is displayed", e);
