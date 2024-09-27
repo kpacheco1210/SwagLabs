@@ -1,5 +1,7 @@
 package seleniumgluecode;
 
+import static pom.BasePage.waitFor;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,7 @@ public class Hooks {
 
   @After
   public void teadDown(){
+    waitFor(5);
     driverManager.quitDriver();
   }
 
