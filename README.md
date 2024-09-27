@@ -47,3 +47,7 @@ cd SwagLabs
 mvn test
 ```
 
+## Example of cucumber report
+|<img width="800" alt="image" src="https://github.com/user-attachments/assets/21aafc3f-14a0-42d6-9ff3-70a685ea1e19">|
+| - |
+
